@@ -1,0 +1,19 @@
+.btn-main {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  box-shadow: 0 2px 0 #ab8500;
+  background: $btn-bg-color;
+  border: 1px solid #dfad00;
+  border-radius: 5px;
+  color: $btn-color;
+  font-size: 0.6em;
+  text-shadow: 0 -1px 0 rgba(171, 133, 0, 0.75);
+
+  &:hover {
+    background: #ffffff;
+
+    transition: background 0.5s ease;
+    color: #dfad00;
+  }
+}

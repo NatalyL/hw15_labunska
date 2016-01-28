@@ -1,0 +1,38 @@
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after, .container:after {
+  clear: both;
+}
+
+body {
+  background: #ffffff;
+  font-size: 14px;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0 0;
+}
