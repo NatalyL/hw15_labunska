@@ -30,7 +30,7 @@
 
 </head>
 <body>
-<header class="ft-page">
+<header class="h-page">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -45,7 +45,7 @@
                         <li><a href="#tabs">Tabs</a></li>
                         <li><a href="#tooltip">Tooltip</a></li>
                         <li><a href="#slider-single">SliderSingle</a></li>
-                        <li><a href="#slider-multy">SliderMultiple</a></li>
+                        <li><a href="#slider-multiple">SliderMultiple</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,7 +56,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h2>Каталог</h2>
+                <h2>Accordion</h2>
             </div>
         </div>
         <div class="row">
@@ -207,7 +207,29 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-
+                <h2>Modal window</h2>
+                <div id="hider"></div>
+                <div id="popup_box">
+                    <div class="create">
+                        Create new user
+                        <a class="buttonClose">Close</a>
+                    </div>
+                    <p>All form fields are required.</p>
+                    <form action="#">
+                        <ul>
+                            <li><label for="name">Your name:</label></li>
+                            <li><input type="text" id="name" name="name" placeholder="John Smith"></li>
+                            <li><label for="email">Your email:</label></li>
+                            <li><input type="email" id="email" name="email" placeholder="John@gmail.com"></li>
+                            <li><label for="password">Your password:</label></li>
+                            <li><input type="password" id="password" name="password"></li>
+                            <li class="btn-popup clearfix"><input type="submit" value="Create an account"></li>
+                        </ul>
+                    </form>
+                </div>
+                <div id="content">
+                    <a href="#" id="showpopup">ClickMe</a>
+                </div>
             </div>
         </div>
     </div>
@@ -216,6 +238,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
+                <h2>Tabs</h2>
                 <ul class="tabs">
                     <li><a href="#tab1">Tab1</a></li>
                     <li><a href="#tab2">Tab2</a></li>
@@ -264,6 +287,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
+                <h2>Tooltip</h2>
+
                 <p>Tooltips are also useful for form elements, to show some additional information in the context of
                     each field.</p>
 
@@ -284,16 +309,18 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
-                <div class="flexslider">
+                <h2>Slider single</h2>
+
+                <div class="flexslider" id="sliderOne">
                     <ul class="slides">
                         <li>
-                            <img src="images/slide1.jpg" />
+                            <img src="images/slide1.jpg"/>
                         </li>
                         <li>
-                            <img src="images/slide2.jpg" />
+                            <img src="images/slide2.jpg"/>
                         </li>
                         <li>
-                            <img src="images/slide3.jpg" />
+                            <img src="images/slide3.jpg"/>
                         </li>
                     </ul>
                 </div>
@@ -301,6 +328,67 @@
         </div>
     </div>
 </section>
+<section class="sliders-few" id="slider-multiple">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <h2>Slider multiple</h2>
+
+                <div class="flexslider" id="sliderFew">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/slide1.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide2.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide3.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide4.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide1.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide2.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide3.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide4.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide1.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide2.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide3.jpg"/>
+                        </li>
+                        <li>
+                            <img src="images/slide4.jpg"/>
+                        </li>
+                        <!-- items mirrored twice, total of 12 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="ft-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 clearfix">
+                <p>Copyright &copy; Labunska Nataly</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#top" class="arrow-top"><img src="images/arrow_top.png" alt=""></a>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 <script src="js/script.js"></script>

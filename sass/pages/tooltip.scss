@@ -3,18 +3,17 @@
   p {
     margin: 20px 0;
   }
-}
 
+  form {
 
-form {
-
-  ul {
-    li {
-      display: inline-block;
+    ul {
+      li {
+        display: inline-block;
+      }
     }
   }
+
 }
-/* Some basic styling to notify users about the tooltips*/
 
 .tooltipp:hover {
   position: relative;

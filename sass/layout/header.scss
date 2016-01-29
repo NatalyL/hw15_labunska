@@ -1,4 +1,4 @@
-.ft-page {
+.h-page {
   background: green;
   padding: $spacing 0;
 
@@ -11,7 +11,6 @@
   }
 
   .main-nav {
-    position: relative;
 
     ul {
 
@@ -32,7 +31,6 @@
   }
 
   .main-nav > ul > li {
-    position: relative;
     padding-right: 10px;
   }
 }
@@ -45,17 +43,26 @@
   display: block;
 }
 
-@media screen and (min-width: 990px) {
-  .ft-page {
+@media screen and (min-width: 1100px) {
+  .h-page {
 
     .nav-btn {
       display: none;
     }
 
     .main-nav {
+      overflow:hidden;
+      position:relative;
 
       ul {
-        display: block;
+        clear:left;
+        float:left;
+        list-style:none;
+        margin:0;
+        padding:0;
+        position:relative;
+        left:50%;
+        text-align:center;
 
         li {
           float: left;
@@ -65,6 +72,10 @@
           border-radius: 20px;
         }
       }
+    }
+    .main-nav > ul > li {
+      position:relative;
+      right:50%;
     }
   }
 
