@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css">
 
 
     <link rel="stylesheet" href="css/main.css">
@@ -42,11 +43,9 @@
                         <li><a href="#accordion">Accordion</a></li>
                         <li><a href="#modal-window">Modal</a></li>
                         <li><a href="#tabs">Tabs</a></li>
-                        <li><a href="#">link 4</a></li>
-                        <li><a href="#">link 1</a></li>
-                        <li><a href="#">link 1</a></li>
-                        <li><a href="#">link 1</a></li>
-                        <li><a href="#">link 1</a></li>
+                        <li><a href="#tooltip">Tooltip</a></li>
+                        <li><a href="#slider-single">SliderSingle</a></li>
+                        <li><a href="#slider-multy">SliderMultiple</a></li>
                     </ul>
                 </nav>
             </div>
@@ -261,7 +260,49 @@
         </div>
     </div>
 </section>
+<section class="tool" id="tooltip">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Tooltips are also useful for form elements, to show some additional information in the context of
+                    each field.</p>
+
+                <form action="#">
+                    <ul>
+                        <li><label for="age">Your age:</label></li>
+                        <li class="tooltipp tooltipp-top"
+                            data-tooltip="We ask for your age only for statistic purpose">
+                            <input type="text" id="age"></li>
+                    </ul>
+                </form>
+                <p>Hover the field to see the tooltip.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sliders" id="slider-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/slide1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/slide2.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/slide3.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

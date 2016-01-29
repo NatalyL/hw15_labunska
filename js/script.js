@@ -79,6 +79,12 @@ $(function () {
         return false;
     }));
 
+    //sliders
+
+    $('.flexslider').flexslider({
+        animation: "slide"
+    });
+
 });
 
 //$(window).resize(function () {
