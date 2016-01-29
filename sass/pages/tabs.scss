@@ -1,0 +1,55 @@
+.tabs-set {
+  background: #2aabd2;
+  padding: $spacing 0;
+
+  .tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    width: 100%;
+
+    li {
+      float: left;
+      margin: 0;
+      padding: 5px;
+      border: 1px solid #999;
+      background: #e0e0e0;
+
+      &:hover {
+        background: #ccc;
+      }
+
+      &.active {
+        background: #fff;
+        border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+      }
+
+      &.active:hover {
+        background: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        font-size: 1.2em;
+        padding: 0 20px;
+      }
+    }
+  }
+
+    .tab_container {
+      border: 1px solid #999;
+      border-top: none;
+      clear: both;
+      float: left;
+      width: 100%;
+      background: #fff;
+    }
+
+    .tab_content {
+      padding: 20px;
+      font-size: 1.2em;
+    }
+  }

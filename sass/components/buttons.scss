@@ -2,18 +2,38 @@
   position: relative;
   display: inline-block;
   padding: 5px 15px;
-  box-shadow: 0 2px 0 #ab8500;
   background: $btn-bg-color;
   border: 1px solid #dfad00;
   border-radius: 5px;
   color: $btn-color;
   font-size: 0.6em;
-  text-shadow: 0 -1px 0 rgba(171, 133, 0, 0.75);
 
   &:hover {
     background: #ffffff;
 
     transition: background 0.5s ease;
     color: #dfad00;
+  }
+}
+
+.nav-btn {
+  margin: 10px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-bottom: 4px solid $burger-color;
+  border-top: 4px solid $burger-color;
+  position: relative;
+  float: right;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: $burger-color;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
   }
 }
